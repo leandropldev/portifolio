@@ -1,12 +1,17 @@
 <div class="navbar">
-    <div class="logo">Leandro Reis
-        <i class="bi bi-github"></i>
-        <i class="bi bi-linkedin"></i>
+    <div class="logo">
+        <span>Leandro Reis</span>
     </div>
-    <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+    <div class="side">
+        <ul>
+            <li><a href="#">{{'About' | translate }}</a></li>
+            <li><a href="#">{{'Portfolio' | translate}}</a></li>
+            <li><a href="#">{{'Resume' | translate}}</a></li>
+            <li><a href="#">{{'Contact' | translate}}</a></li>
+        </ul>
+        <select [(ngModel)]="selectedLanguage" (change)="onLanguageChange()">
+            <option value="en">EN</option>
+            <option value="pt">PT</option>
+        </select>
+    </div>
 </div>
