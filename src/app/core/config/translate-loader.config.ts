@@ -7,9 +7,11 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 export function provideTranslation() {
-    let language = 'en';
+    //let language = localStorage.getItem('Accept-Language');
+    //if(!language) language === 'en'
+
     return {
-        defaultLanguage: language,
+        defaultLanguage: 'en',
         loader: {
             provide: TranslateLoader,
             useFactory: (createTranslateLoader),

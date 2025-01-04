@@ -3,9 +3,9 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
-import { provideTranslation } from './core/config/translate-loader.config';
 import { TranslateModule } from '@ngx-translate/core';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { provideTranslation } from './core/config/translate-loader.config';
 
 export const appConfig: ApplicationConfig = {
   providers: [

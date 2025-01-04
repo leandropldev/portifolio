@@ -1,7 +1,9 @@
 {
-    "About":"Sobre",
-    "Portfolio": "Portfolio",
-    "Resume": "Resumo",
-    "Contact": "Contato",
+    "navbar": {
+        "about":"Sobre",
+        "portfolio": "Portfolio",
+        "resume": "Resumo",
+        "contact": "Contato"
+    },
     "title": "Titulo"
 }
